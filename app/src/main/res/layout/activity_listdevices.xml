@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" android:background="#fffc970b"
+              android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/list_paired_devices" android:textAlignment="center" android:textSize="20sp"
+        android:gravity="center_vertical|center_horizontal" android:id="@+id/listTextView"/>
+
+    <ListView android:id="@android:id/list"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:drawSelectorOnTop="false" android:layout_weight="0.87"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchProgressBar" android:layout_gravity="center_horizontal"
+        android:indeterminate="false"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_devices"
+        android:id="@+id/searchButton"/>
+
+</LinearLayout>

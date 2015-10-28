@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.example.sebastian.ardurobot.controller.AutonomicActivity"
+                android:background="#fffc970b">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kąt"
+        android:id="@+id/angleTextView" android:textSize="20sp" android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siła"
+        android:id="@+id/powerTextView" android:textSize="20sp"
+        android:layout_below="@+id/angleTextView" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kierunek"
+        android:id="@+id/direcTextView" android:textSize="20sp"
+        android:layout_below="@+id/powerTextView" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/angleValueTextView" android:layout_above="@+id/powerTextView"
+        android:layout_toRightOf="@+id/direcTextView" android:layout_toEndOf="@+id/direcTextView"
+        android:layout_marginLeft="35dp" android:layout_marginStart="35dp" android:text="--"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:id="@+id/powerValueTextView"
+        android:layout_below="@+id/angleValueTextView" android:layout_alignLeft="@+id/angleValueTextView"
+        android:layout_alignStart="@+id/angleValueTextView" android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:id="@+id/direcValueTextView"
+        android:layout_alignBottom="@+id/direcTextView" android:layout_alignLeft="@+id/powerValueTextView"
+        android:layout_alignStart="@+id/powerValueTextView" android:textSize="20sp"/>
+
+    <com.zerokol.views.JoystickView android:layout_width="300sp" android:layout_height="300sp" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" android:id="@+id/joystickView"/>
+</RelativeLayout>
