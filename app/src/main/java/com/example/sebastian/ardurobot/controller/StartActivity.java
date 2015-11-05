@@ -25,7 +25,7 @@ public class StartActivity extends ActionBarActivity {
         mConnectionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                start(ListDevicesActivity.class);
+                start(ListDevicesAndConnectActivity.class);
             }
         });
 

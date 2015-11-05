@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".controller.ListDevicesActivity"
+            android:name=".controller.ListDevicesAndConnectActivity"
             android:screenOrientation="portrait"
             android:noHistory="true"
             android:label="@string/title_activity_connect" >

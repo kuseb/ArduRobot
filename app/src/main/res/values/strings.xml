@@ -3,18 +3,21 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="connection">Połącz</string>
-    <string name="autonomic">Tryb autonomiczny</string>
-    <string name="manual">Tryb manualny</string>
+    <string name="connection">Connect</string>
+    <string name="autonomic">Autonomic mode</string>
+    <string name="manual">Manual mode</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
-    <string name="list_paired_devices">Lista urządzeń sparowanych</string>
-    <string name="list_found_devices">Lista urządzeń znalezionych</string>
+    <string name="list_paired_devices">Paired devices list</string>
+    <string name="list_found_devices">Found devices list</string>
     <string name="title_activity_connect">ConnectActivity</string>
     <string name="title_activity_manual">ManualActivity</string>
-    <string name="remain">Pozostało:</string>
+    <string name="remain">Remain:</string>
     <string name="remain_value">--</string>
     <string name="clean_button">Clean mode</string>
     <string name="clean_mode">Clean mode:</string>
-    <string name="search_devices">Wyszukaj urządzenia</string>
+    <string name="search_devices">Search devices</string>
+    <string name="progress_dialog_title">Connecting</string>
+    <string name="progress_dialog_message">Please wait...</string>
+    <string name="not_connected">Not connected...</string>
 </resources>

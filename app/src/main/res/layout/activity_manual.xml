@@ -53,4 +53,12 @@
         android:layout_alignStart="@+id/powerValueTextView" android:textSize="20sp"/>
 
     <com.zerokol.views.JoystickView android:layout_width="300sp" android:layout_height="300sp" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" android:id="@+id/joystickView"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/steeringSwitch" android:layout_alignTop="@+id/joystickView"
+        android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/joystickView" android:layout_toEndOf="@+id/joystickView"
+        android:textOff="Joystick" android:textOn="Gyroscope" android:width="30dp"
+        android:height="30dp"/>
 </RelativeLayout>

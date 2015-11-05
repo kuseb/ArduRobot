@@ -17,4 +17,7 @@
     <string name="clean_button">Tryb sprzątania</string>
     <string name="clean_mode">Tryb sprzątania:</string>
     <string name="search_devices">Wyszukaj urządzenia</string>
+    <string name="progress_dialog_title">Połączenie</string>
+    <string name="progress_dialog_message">Proszę czekać</string>
+    <string name="not_connected">Nie połączono</string>
 </resources>

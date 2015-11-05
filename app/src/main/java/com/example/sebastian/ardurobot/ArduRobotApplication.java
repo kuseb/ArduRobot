@@ -2,20 +2,20 @@ package com.example.sebastian.ardurobot;
 
 import android.app.Application;
 
-import com.example.sebastian.ardurobot.model.BluetoothServer;
+import com.example.sebastian.ardurobot.model.BluetoothClient;
 
 /**
  * Created by Sebastian on 25.10.2015.
  */
 public class ArduRobotApplication extends Application {
-    private BluetoothServer mBluetoothServer;
+    private BluetoothClient mBluetoothClient;
 
-    public BluetoothServer getBluetoothServer() {
-        return mBluetoothServer;
+    public BluetoothClient getBluetoothClient() {
+        return mBluetoothClient;
     }
 
-    public void setBluetoothServer(BluetoothServer bluetoothServer) {
-        mBluetoothServer = bluetoothServer;
+    public void setBluetoothClient(BluetoothClient bluetoothClient) {
+        mBluetoothClient = bluetoothClient;
     }
 
 }

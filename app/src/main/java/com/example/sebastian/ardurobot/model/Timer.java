@@ -7,6 +7,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
+import java.io.IOException;
+
 /**
  * Created by Sebastian on 08.10.2015.
  */
@@ -25,14 +27,17 @@ public class Timer {
    private Button mStartButton;
     private Button mStopButton;
     private ToggleButton mCleanButton;
+    private BluetoothClient mBluetoothClient;
+    private final int STOP=255;
 
-    public Timer(TextView remainValueTextView, ProgressBar progressBar, Button startButton, Button stopButton,ToggleButton cleanButton)
+    public Timer(TextView remainValueTextView, ProgressBar progressBar, Button startButton, Button stopButton,ToggleButton cleanButton, BluetoothClient bluetoothClient)
     {
         mRemainValueTextView=remainValueTextView;
         mProgressBar=progressBar;
         mStartButton =startButton;
         mStopButton=stopButton;
         mCleanButton=cleanButton;
+        mBluetoothClient=bluetoothClient;
     }
 
     public long getInitSeconds() {
@@ -65,6 +70,13 @@ public class Timer {
         mStartButton.setEnabled(true);
         mStopButton.setEnabled(false);
         mCleanButton.setEnabled(true);
+
+        if(mBluetoothClient!=null) {
+            try {
+                mBluetoothClient.sendData(STOP);
+            } catch (IOException e) {
+            }
+        }
 
         mHandler.removeCallbacks(updateTimer);
     }
